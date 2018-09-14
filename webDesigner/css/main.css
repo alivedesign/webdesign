@@ -1,0 +1,376 @@
+@charset "UTF-8";
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i, dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-size: 100%; }
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  outline: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td, td img {
+  vertical-align: top; }
+
+input, select, button, textarea {
+  margin: 0;
+  font-size: 100%;
+  outline: none; }
+
+input[type="text"], input[type="password"], textarea {
+  padding: 0; }
+
+input[type="checkbox"] {
+  vertical-align: bottom; }
+
+input[type="radio"] {
+  vertical-align: text-bottom; }
+
+sub {
+  vertical-align: sub;
+  font-size: smaller; }
+
+sup {
+  vertical-align: super;
+  font-size: smaller; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+nav ul {
+  list-style: none; }
+
+html {
+  min-height: 100%; }
+
+body {
+  color: #000;
+  text-align: left;
+  font-size: 1em;
+  min-height: 100%; }
+
+body, html {
+  font-family: Arial; }
+
+a, a:visited {
+  color: #e6618c;
+  text-decoration: none; }
+
+a:hover {
+  color: #fdf208;
+  text-decoration: none; }
+
+a:focus, a:active {
+  color: #c83867;
+  text-decoration: none; }
+
+img {
+  max-width: 100%; }
+
+.clr {
+  clear: both; }
+
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: table; }
+
+/**************************************************************/
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url("../fonts/Roboto-Regular.eot");
+  src: url("../fonts/Roboto-Regular.eot#iefix") format("embedded-opentype");
+  src: url("../fonts/Roboto-Regular.woff") format("woff");
+  src: url("../fonts/Roboto-Regular.ttf") format("truetype");
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto-Bold';
+  src: url("../fonts/Roboto-Bold.eot");
+  src: url("../fonts/Roboto-Bold.eot#iefix") format("embedded-opentype");
+  src: url("../fonts/Roboto-Bold.woff") format("woff");
+  src: url("../fonts/Roboto-Bold.ttf") format("truetype");
+  font-style: normal; }
+
+/**********************************************************/
+body {
+  font-family: 'Roboto-Regular',sans-serif; }
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto; }
+
+header {
+  padding-top: 45px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  header .menu ul {
+    list-style: none; }
+    header .menu ul li {
+      display: inline-block;
+      margin-right: 35px; }
+      header .menu ul li a {
+        font-size: 16px;
+        color: #000; }
+        header .menu ul li a:hover {
+          color: #fc99ad;
+          text-decoration: underline; }
+  header .contact p {
+    float: left;
+    margin-right: 30px;
+    font-size: 25px;
+    font-family: 'Roboto-Bold',sans-serif; }
+  header .contact .btn {
+    padding: 19px 40px;
+    border: 1px solid #f82370;
+    color: #f53f4f; }
+    header .contact .btn:hover {
+      background-color: #f82370;
+      color: #fff; }
+
+.main {
+  padding-top: 250px;
+  background-image: url(../img/bg.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  padding-bottom: 256px; }
+  .main .content {
+    position: relative; }
+    .main .content h1 {
+      font-size: 80px;
+      font-family: 'Roboto-Bold',sans-serif; }
+    .main .content p {
+      font-size: 25px;
+      color: #8993ad;
+      margin-top: 10px;
+      margin-bottom: 45px; }
+    .main .content .content__btn {
+      background-color: #ff4e2e;
+      padding: 25px 70px;
+      font-size: 18px;
+      color: #fff; }
+    .main .content span {
+      font-size: 40px;
+      color: #F82272;
+      font-family: 'Roboto-Bold',sans-serif;
+      position: absolute; }
+      .main .content span:first-child {
+        -webkit-transform: rotate(25deg);
+            -ms-transform: rotate(25deg);
+                transform: rotate(25deg);
+        top: -150px;
+        left: -70px; }
+      .main .content span:nth-child(2) {
+        -webkit-transform: rotate(-15deg);
+            -ms-transform: rotate(-15deg);
+                transform: rotate(-15deg);
+        top: -130px;
+        left: 370px; }
+      .main .content span:nth-child(3) {
+        -webkit-transform: rotate(35deg);
+            -ms-transform: rotate(35deg);
+                transform: rotate(35deg);
+        top: 40px;
+        left: -50px; }
+      .main .content span:nth-child(4) {
+        -webkit-transform: rotate(20deg);
+            -ms-transform: rotate(20deg);
+                transform: rotate(20deg);
+        top: 250px;
+        left: 350px; }
+      .main .content span:nth-child(5) {
+        -webkit-transform: rotate(-20deg);
+            -ms-transform: rotate(-20deg);
+                transform: rotate(-20deg);
+        top: 350px; }
+
+.whatido {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .whatido h1 {
+    font-size: 54px;
+    color: #262626;
+    margin-bottom: 100px; }
+  .whatido .whatido__icons {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    .whatido .whatido__icons .whatido__adv {
+      width: 270px; }
+      .whatido .whatido__icons .whatido__adv .whatido__icon {
+        height: 74px;
+        background-image: url(../img/Иконки.png);
+        margin: 0 auto;
+        margin-bottom: 25px; }
+      .whatido .whatido__icons .whatido__adv .whatido__icon1 {
+        width: 80px;
+        background-position: 0 0; }
+      .whatido .whatido__icons .whatido__adv .whatido__icon2 {
+        width: 79px;
+        background-position: -92px 0; }
+      .whatido .whatido__icons .whatido__adv .whatido__icon3 {
+        width: 74px;
+        background-position: -180px 0; }
+      .whatido .whatido__icons .whatido__adv .whatido__icon4 {
+        width: 68px;
+        background-position: -264px 1px; }
+      .whatido .whatido__icons .whatido__adv p {
+        font-size: 20px;
+        color: #8993ad;
+        text-align: center; }
+  .whatido .whatido__btn {
+    background-color: #ff4e2e;
+    padding: 25px 70px;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'Roboto-Regular', sans-serif;
+    display: block;
+    width: 153px;
+    margin: 0 auto;
+    margin-top: 100px; }
+
+.predlozhenie {
+  padding: 90px 0;
+  background: -webkit-linear-gradient(45deg, #ff8f5a, #ff2f96);
+  background: -o-linear-gradient(45deg, #ff8f5a, #ff2f96);
+  background: linear-gradient(45deg, #ff8f5a, #ff2f96); }
+  .predlozhenie h1 {
+    font-size: 45px;
+    color: #fff;
+    width: 970px;
+    margin: 0 auto; }
+  .predlozhenie p {
+    color: #fff;
+    font-size: 18px;
+    width: 770px;
+    margin-top: 50px;
+    margin-left: 100px; }
+
+footer {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 90px 0; }
+  footer .menu ul {
+    list-style: none; }
+    footer .menu ul li {
+      margin-top: 15px; }
+      footer .menu ul li a {
+        color: #8993ad; }
+    footer .menu ul li:first-child {
+      margin-top: 0; }
+  footer .footer__contacts {
+    width: auto; }
+    footer .footer__contacts p {
+      display: inline-block; }
+    footer .footer__contacts .iconmail {
+      width: 23px;
+      height: 15px;
+      background-image: url(../img/Иконки.png);
+      background-position: -360px 0;
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 40px; }
+    footer .footer__contacts .icontel {
+      width: 18px;
+      height: 18px;
+      background-image: url(../img/Иконки.png);
+      background-position: -337px 0;
+      display: inline-block;
+      margin-right: 15px; }
+  footer .footer__social .btn {
+    padding: 19px 40px;
+    border: 1px solid #f82370;
+    color: #f53f4f; }
+    footer .footer__social .btn:hover {
+      background-color: #f82370;
+      color: #fff; }
+  footer .footer__social .sicon {
+    background-image: url(../img/Иконки.png);
+    display: inline-block;
+    margin-top: 40px;
+    margin-right: 30px;
+    cursor: pointer; }
+  footer .footer__social .vk {
+    width: 36px;
+    height: 20px;
+    background-position: -336px 45px; }
+  footer .footer__social .fb {
+    width: 16px;
+    height: 28px;
+    background-position: -383px 54px; }
+  footer .footer__social .tw {
+    width: 29px;
+    height: 24px;
+    background-position: -420px 50px; }
+  footer .footer__social .inst {
+    width: 25px;
+    height: 25px;
+    background-position: -464px 51px;
+    margin-right: 0; }
+
+@media only screen and (max-width: 1017px) {
+  header {
+    display: block;
+    padding-left: 20px;
+    padding-right: 20px; }
+    header .menu {
+      text-align: center;
+      margin-bottom: 20px; }
+    header .contact {
+      text-align: center; }
+      header .contact p {
+        float: none;
+        margin-bottom: 40px; }
+  .main {
+    text-align: center;
+    background-position: center;
+    -webkit-background-size: cover;
+            background-size: cover;
+    margin: 0 auto; }
+    .main .content p {
+      color: #fff; } }
+
+@media only screen and (max-width: 500px) {
+  .main .content h1 {
+    font-size: 60px; }
+  .main .content p {
+    font-size: 20px; }
+  header .menu ul li {
+    display: block;
+    margin-top: 25px; } }
